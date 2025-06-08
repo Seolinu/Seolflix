@@ -5,55 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Seolflix 가구 업데이트 관리 서버</title>
   <style>
-    /* 다크모드 배경 */
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       background-color: #121212;
       color: #ccc;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding-top: 60px;
     }
 
-    /* 메인 제목 (파스텔 노란색) */
     h1 {
-      color: #f7e8a8; /* 파스텔 노란색 */
+      color: #f7e8a8;
       font-size: 2.5rem;
       text-align: center;
+      margin-top: 60px;
       margin-bottom: 8px;
     }
 
-    /* 서브 텍스트 */
     p.subtitle {
-      color: #ffd6e8; /* 파스텔 핑크 */
+      color: #ffd6e8;
       font-size: 0.9rem;
-      margin-top: 0;
-      margin-bottom: 30px;
       text-align: center;
+      margin: 0 0 30px 0;
     }
 
-    /* 이모티콘 스타일 */
     .emoji {
       font-size: 1.6rem;
       vertical-align: middle;
       margin: 0 8px;
     }
 
-    /* 메일 목록 스타일 */
     .email-list {
       width: 90%;
       max-width: 900px;
+      margin: 0 auto 40px auto;
       display: flex;
       flex-direction: column;
       gap: 25px;
     }
 
-    /* 각 메일 카드 */
     .email-card {
       background-color: #1e1e1e;
       border-radius: 12px;
@@ -65,7 +55,7 @@
     .email-card h2 {
       margin: 0 0 6px 0;
       font-weight: 700;
-      color: #f7e8a8; /* 파스텔 노란색 제목과 통일 */
+      color: #f7e8a8;
     }
 
     .email-card .from-date {
@@ -74,11 +64,10 @@
       margin-bottom: 14px;
     }
 
-    /* 넷플릭스 버튼 (파스텔 연한 빨간색) */
     .btn-netflix {
       display: inline-block;
       padding: 10px 18px;
-      background-color: #f7a8a8; /* 파스텔 연한 빨간색 */
+      background-color: #f7a8a8;
       color: white;
       border-radius: 6px;
       text-decoration: none;
@@ -87,12 +76,11 @@
     }
 
     .btn-netflix:hover {
-      background-color: #d67272; /* 호버 시 더 진한 빨간색 */
+      background-color: #d67272;
     }
 
-    /* 일반 a 태그 색상 변경 (넷플릭스 버튼 제외) */
     .email-body a:not(.btn-netflix) {
-      color: #f7a8a8; /* 연한 빨간색 */
+      color: #f7a8a8;
       text-decoration: underline;
     }
 
