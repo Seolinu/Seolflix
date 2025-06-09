@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # GAS 웹 앱 URL (1-3에서 복사한 URL)
-GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyf9tUP89kTyteCfIuMB3rOjXekbO1QEIvholzs_G79bSFloXhUGlNTNJY90lqOnWoX/exec"
+GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwR2JMItgKcIcC3L_fBvPdsMO8vK6cElhVLq6HYlQgGY37OFeARgARKsbdTWeZjKXfZ/exec"
 
 @app.route('/')
 def index():
